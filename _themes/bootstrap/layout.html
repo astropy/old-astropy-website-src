@@ -10,14 +10,10 @@
         <a class="brand" href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>
         <ul class="nav">
           {% block sidebartoc %}
-            {% include "globaltoc.html" %}
-            {% include "localtoc.html" %}
+            {% include "menubar.html" %}
           {% endblock %}
           {% block sidebarrel %}
             {% include "relations.html" %}
-          {% endblock %}
-          {% block sidebarsourcelink %}
-            {% include "sourcelink.html" %}
           {% endblock %}
         </ul>
         <ul class="nav secondary-nav">
