@@ -10,6 +10,11 @@ dt:hover > a.headerlink {
     visibility: hidden;
 }
 
+.logo_banner {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
 /*!
  * Bootstrap v1.4.0
  *
@@ -417,7 +422,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
+/*  font-weight: bold;*/
   color: #404040;
 }
 h1 small,
@@ -429,16 +434,18 @@ h6 small {
   color: #bfbfbf;
 }
 h1 {
-  margin-bottom: 18px;
-  font-size: 30px;
-  line-height: 36px;
+  margin-top: 14px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 33px;
 }
 h1 small {
   font-size: 18px;
 }
 h2 {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 10px;
 }
 h2 small {
   font-size: 14px;
