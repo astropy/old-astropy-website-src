@@ -38,6 +38,7 @@ to help you get started with Astropy:
    documentation
    support
    contributing
+   team
 
 We are always looking for more people to help develop various components of
 Astropy. If you are interested in contributing, head over to the
