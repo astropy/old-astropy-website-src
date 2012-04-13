@@ -4,6 +4,7 @@
 .. _`PyWCS`: https://trac.assembla.com/astrolib
 .. _`vo`: https://trac.assembla.com/astrolib
 .. _`asciitable`: http://cxc.harvard.edu/contrib/asciitable/
+.. _`astropy-users`: http://groups.google.com/group/astropy-users
 
 .. raw:: html
 
@@ -36,6 +37,8 @@ to help you get started with Astropy:
    support
    contributing
    team
+
+Stay updated by following `@astropy <http://twitter.com/#!/astropy>`_ on Twitter, or sign up to the `astropy-users`_ mailing list!
 
 If you are interested in finding out more about the Astropy project, you can read the :doc:`original vision <vision>` for the package.
 
