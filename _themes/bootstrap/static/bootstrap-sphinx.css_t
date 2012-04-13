@@ -17,7 +17,7 @@ div.documentwrapper {
 {%- block sidebarlogo %}
   {%- if logo %}
 .topbar h3 a, .topbar .brand {
-  background: transparent url("{{ logo }}") no-repeat 22px 3px;
+  background: transparent url("{{ logo }}") no-repeat 22px 4px;
   padding-left: 62px;
 }
   {%- endif %}
