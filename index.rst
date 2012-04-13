@@ -1,11 +1,8 @@
 .. title:: Welcome
 
 .. _`PyFITS`: http://www.stsci.edu/institute/software_hardware/pyfits
-
 .. _`PyWCS`: https://trac.assembla.com/astrolib
-
 .. _`vo`: https://trac.assembla.com/astrolib
-
 .. _`asciitable`: http://cxc.harvard.edu/contrib/asciitable/
 
 .. raw:: html
