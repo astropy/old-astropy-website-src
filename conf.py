@@ -97,7 +97,7 @@ html_theme_path = ['_themes']
 # (Optional) Logo. Should be exactly 32x32 px to fit the nav. bar.
 # Path should be relative to the html_static_path setting (e.g.,
 # "_static") in source.
-# html_logo = "my_logo.png"
+html_logo = "logos/astropy_word_26.png"
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
@@ -116,7 +116,7 @@ html_theme = 'bootstrap'
 html_title = 'Astropy'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = 'Home'
+html_short_title = ''
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
