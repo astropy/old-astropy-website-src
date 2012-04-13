@@ -36,6 +36,7 @@ Testing your installation
 You can check that astropy is correctly installed by starting up ``python`` or ``ipython``, and importing ``astropy``::
 
     >>> import astropy
+    >>> astropy.test()
 
 If you do not get any errors, the installation was successful! If you have issues getting Astropy installed, either post a message to the `astropy-users`_ mailing list, or report the issue on our `issue tracker`_!
 
