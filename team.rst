@@ -5,6 +5,7 @@ The Astropy team
 .. _`specutils`: https://github.com/astropy/specutils
 .. _`pyidlastro`: https://github.com/astropy/pyidlastro
 .. _`photutils`: https://github.com/astropy/photutils
+.. _`kcorrect`: https://github.com/astropy/kcorrect
 
 Project Coordinators
 ^^^^^^^^^^^^^^^^^^^^
@@ -18,30 +19,31 @@ Core package maintainers
 
 In addition to the coordination committee, the following individuals maintain the core package:
 
-* `Michael Droettboom <http://droettboom.com>`_, STScI
-* Erik Bray, STScI
 * `Tom Aldcroft <http://hea-www.harvard.edu/~aldcroft/>`_, CfA
+* Erik Bray, STScI
+* Matt Davis, STScI
+* `Michael Droettboom <http://droettboom.com>`_, STScI
 
 Affiliated package maintainers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * `Tom Aldcroft <http://hea-www.harvard.edu/~aldcroft/>`_, CfA (`pyidlastro`_)
 * Rene Breton, University of Southampton (`photutils`_)
-* `Steve Crawford <http://www.salt.ac.za/about/people-partners/operations-team/steve-crawford/>`_, SALT (`specutils`_)
-* `Adam Ginsburg <http://casa.colorado.edu/~ginsbura/>`_, U Colorado (`specutils`_)
 * Wolfgang Kerzendorf, ANU (`specutils`_)
-* Demitri Muna, NYU (`specutils`_)
-* `Adrian Price-Whelan <http://www.adrianpricewhelan.com/>`_, Columbia U (`specutils`_)
+* Taro Sato (`kcorrect`_)
 
 Contributors
 ^^^^^^^^^^^^
 
-* Matt Davis
+* Demitri Muna, NYU
+* `Adrian Price-Whelan <http://www.adrianpricewhelan.com/>`_, Columbia U
+* `Steve Crawford <http://www.salt.ac.za/about/people-partners/operations-team/steve-crawford/>`_, SALT
+* `Adam Ginsburg <http://casa.colorado.edu/~ginsbura/>`_, U Colorado
 * Frederic Grollier
 * Prasanth Nair
-* Neil Crighton
+* `Neil Crighton <http://www.mpia.de/~nhmc/>`_, MPIA
 * Christoph Deil
-* Kyle Barbary
+* `Kyle Barbary <http://sites.google.com/site/kylebarbary/>`_, Lawrence Berkeley National Lab, 
 
 ... and thanks to everyone on the `astropy-dev`_ mailing list for contributing to many discussions and decisions!
 
