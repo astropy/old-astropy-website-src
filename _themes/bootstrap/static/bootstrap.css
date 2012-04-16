@@ -1467,7 +1467,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 .topbar div > ul.secondary-nav, .nav.secondary-nav {
   float: right;
   margin-left: 10px;
-  margin-right: 100px;
+  margin-right: 0px;
 }
 .topbar div > ul.secondary-nav .menu-dropdown,
 .nav.secondary-nav .menu-dropdown,
