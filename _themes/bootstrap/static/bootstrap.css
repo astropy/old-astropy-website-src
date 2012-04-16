@@ -213,7 +213,7 @@ body {
   color: #404040;
 }
 .container {
-  width: 940px;
+  width: 740px;
   margin-left: auto;
   margin-right: auto;
   zoom: 1;
@@ -228,7 +228,7 @@ body {
 }
 .container-fluid {
   position: relative;
-  min-width: 940px;
+  min-width: 740px;
   padding-left: 20px;
   padding-right: 20px;
   zoom: 1;
@@ -335,7 +335,7 @@ a:hover {
   width: 880px;
 }
 .span16 {
-  width: 940px;
+  width: 740px;
 }
 .span17 {
   width: 1000px;
