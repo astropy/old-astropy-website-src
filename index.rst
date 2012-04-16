@@ -4,7 +4,7 @@
 .. _`PyWCS`: https://trac.assembla.com/astrolib
 .. _`vo`: https://trac.assembla.com/astrolib
 .. _`asciitable`: http://cxc.harvard.edu/contrib/asciitable/
-.. _`astropy-users`: http://groups.google.com/group/astropy-users
+.. _`astropy@scipy.org`: http://mail.scipy.org/mailman/listinfo/astropy
 .. _`astropy`: http://mail.scipy.org/mailman/listinfo/astropy
 .. _`issue tracker`: http://github.com/astropy/astropy/issues
 .. _`documentation`: http://astropy.readthedocs.org/en/latest/install.html
@@ -34,7 +34,7 @@ spectroscopic functionality, as well as frameworks for cosmology, unit
 handling, and coordinate transformations. A first stable release is
 tentatively scheduled for early May.
 
-Stay updated by following `@astropy <http://twitter.com/#!/astropy>`_ on Twitter, or sign up to the `astropy-users`_ mailing list!
+Stay updated by following `@astropy <http://twitter.com/#!/astropy>`_ on Twitter, or sign up to the `astropy@scipy.org`_ mailing list!
 
 If you are interested in finding out more about the Astropy project, you can read the :doc:`original vision <vision>` for the package.
 
@@ -72,9 +72,7 @@ Getting help
 ------------
 
 If you want to discuss issues with other Astropy users and with the
-developers, you can sign up to the `astropy-users`_ mailing list (Note that
-this is different from the `astropy`_ mailing list, which is intended for any
-discussion regarding Python and Astronomy).
+developers, you can sign up to the `astropy <astropy@scipy.org>`_ mailing list!
 
 Reporting issues
 ----------------
