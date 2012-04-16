@@ -12,7 +12,7 @@ dt:hover > a.headerlink {
 
 .logo_banner {
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .brand {
@@ -36,6 +36,7 @@ dt:hover > a.headerlink {
 html, body {
   margin: 0;
   padding: 0;
+  text-align: justify;
 }
 h1,
 h2,
@@ -1466,7 +1467,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
 .topbar div > ul.secondary-nav, .nav.secondary-nav {
   float: right;
   margin-left: 10px;
-  margin-right: 0;
+  margin-right: 100px;
 }
 .topbar div > ul.secondary-nav .menu-dropdown,
 .nav.secondary-nav .menu-dropdown,
