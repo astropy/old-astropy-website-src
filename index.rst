@@ -4,7 +4,12 @@
 .. _`PyWCS`: https://trac.assembla.com/astrolib
 .. _`vo`: https://trac.assembla.com/astrolib
 .. _`asciitable`: http://cxc.harvard.edu/contrib/asciitable/
-.. _`astropy-users`: http://groups.google.com/group/astropy-users
+.. _`astropy@scipy.org`: http://mail.scipy.org/mailman/listinfo/astropy
+.. _`astropy`: http://mail.scipy.org/mailman/listinfo/astropy
+.. _`issue tracker`: http://github.com/astropy/astropy/issues
+.. _`documentation`: http://astropy.readthedocs.org/en/latest/install.html
+.. _`Numpy`: http://numpy.scipy.org
+.. _`Python`: http://www.python.org
 
 .. raw:: html
 
@@ -16,6 +21,9 @@
 
     </div>
 
+What is Astropy?
+----------------
+
 The Astropy project is a common effort to develop a single core package for
 Astronomy that brings together almost 100 developers from around the world.
 
@@ -26,23 +34,49 @@ spectroscopic functionality, as well as frameworks for cosmology, unit
 handling, and coordinate transformations. A first stable release is
 tentatively scheduled for early May.
 
-Below, and in the menubar at the top of the page, you will find links to pages
-to help you get started with Astropy:
-
-.. toctree::
-   :maxdepth: 1
-
-   installation
-   documentation
-   support
-   contributing
-   team
-
-Stay updated by following `@astropy <http://twitter.com/#!/astropy>`_ on Twitter, or sign up to the `astropy-users`_ mailing list!
+Stay updated by following `@astropy <http://twitter.com/#!/astropy>`_ on Twitter, or sign up to the `astropy@scipy.org`_ mailing list!
 
 If you are interested in finding out more about the Astropy project, you can read the :doc:`original vision <vision>` for the package.
 
-We are always looking for more people to help develop various components of
-Astropy. If you are interested in contributing, head over to the
-:doc:`contributing` page which has all the information you need to get
-started!
+Documentation
+-------------
+
+The documentation for the latest development version of Astropy can be found
+at `http://astropy.readthedocs.org <http://astropy.readthedocs.org>`_. This
+documentation is automatically updated any time a commit is made to the
+Astropy repository. Once a stable version of Astropy is released, we will
+provide links to the documentation for that version.
+
+Installing
+----------
+
+Detailed installation instructions are provided in the `documentation`_, but
+we have included a simplified version here.
+
+Astropy requires `Python`_ 2.6, 2.7, 3.1, or 3.2, and `Numpy`_ 1.4.0 or later.
+You can install the latest developer version of Astropy using::
+
+    git clone http://github.com/astropy/astropy.git
+    cd astropy
+    python setup.py install
+
+Once a stable version of Astropy is released, we will provide links to the tar file, and updated installation instructions!
+
+You can check that astropy is correctly installed by starting up ``python`` or ``ipython``, and importing ``astropy``::
+
+    >>> import astropy
+
+If you do not get any errors, the installation was successful!
+
+Getting help
+------------
+
+If you want to discuss issues with other Astropy users and with the
+developers, you can sign up to the `astropy <astropy@scipy.org>`_ mailing list!
+
+Reporting issues
+----------------
+
+If you have come across something that you believe is a bug, please open a
+ticket in the Astropy `issue tracker`_, and we will look into it promptly!
+
