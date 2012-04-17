@@ -80,6 +80,18 @@
   });
 }());
 </script>
+
+<meta property="og:title" content="The Astropy Project" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.astropy.org" />
+<meta property="og:image" content="http://www.astropy.org/_static/square_logo.png" />
+<meta property="og:description" content="The Astropy project is a common effort to develop a single core package for Astronomy." />
+<meta property="og:site_name" content="Astropy" />
+
+<script type="text/javascript">var switchTo5x=false;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "0058c3cf-18b8-4998-981c-deb0ef7fb67a"}); </script>
+
 {% endblock %}
 
 {% block header %}{{ navBar() }}{% endblock %}
@@ -94,6 +106,11 @@
 <div class="container">
    {% block body %} {% endblock %}
 </div>
+    <div align='center'>
+      <span class='st_facebook_large' displayText='Facebook' st_title='The Astropy Project' st_url='http://www.astropy.org' st_summary='The Astropy project is a common effort to develop a single core package for Astronomy.'></span>
+      <span class='st_googleplus_large' displayText='Google +1' st_title='The Astropy Project' st_url='http://www.astropy.org' st_summary='The Astropy project is a common effort to develop a single core package for Astronomy.'></span>
+      <span class='st_twitter_large' displayText='Tweet' st_title='The Astropy Project: a common effort to develop a single core Python package for Astronomy!' st_url='http://www.astropy.org'</span>
+    </div>
 {%- endblock %}
 
 {%- block footer %}
