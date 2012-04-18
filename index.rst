@@ -52,7 +52,7 @@ Installing
 Detailed installation instructions are provided in the `documentation`_, but
 we have included a simplified version here.
 
-Astropy requires `Python`_ 2.6, 2.7, 3.1, or 3.2, and `Numpy`_ 1.4.0 or later.
+Astropy requires `Python`_ 2.6, 2.7, 3.1, or 3.2, and `Numpy`_ 1.4 or later.
 You can install the latest developer version of Astropy using::
 
     git clone http://github.com/astropy/astropy.git
