@@ -42,7 +42,7 @@ Contributors
 * Frederic Grollier
 * Prasanth Nair
 * `Neil Crighton <http://www.mpia.de/~nhmc/>`_, MPIA
-* Christoph Deil
+* Christoph Deil, MPIK
 * `Kyle Barbary <http://sites.google.com/site/kylebarbary/>`_, Lawrence Berkeley National Lab, 
 
 ... and thanks to everyone on the `astropy-dev`_ mailing list for contributing to many discussions and decisions!
