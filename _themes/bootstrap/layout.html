@@ -80,6 +80,18 @@
   });
 }());
 </script>
+
+<meta property="og:title" content="The Astropy Project" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.astropy.org" />
+<meta property="og:image" content="http://www.astropy.org/_static/square_logo.png" />
+<meta property="og:description" content="The Astropy project is a common effort to develop a single core package for Astronomy." />
+<meta property="og:site_name" content="Astropy" />
+
+<script type="text/javascript">var switchTo5x=false;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "0058c3cf-18b8-4998-981c-deb0ef7fb67a"}); </script>
+
 {% endblock %}
 
 {% block header %}{{ navBar() }}{% endblock %}
@@ -100,7 +112,7 @@
 <footer class="footer">
   <div class="container">
     <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>
+    <p class="pull-left">
     {%- if show_copyright %}
       {%- if hasdoc('copyright') %}
         {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}<br/>
@@ -115,6 +127,13 @@
       {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}<br/>
     {%- endif %}
     </p>
+    {% if title == "Welcome" %}
+    <p align='center'>
+      <span class='st_facebook_large' displayText='Facebook' st_title='The Astropy Project' st_url='http://www.astropy.org' st_summary='The Astropy project is a common effort to develop a single core package for Astronomy.'></span>
+      <span class='st_googleplus_large' displayText='Google +1' st_title='The Astropy Project' st_url='http://www.astropy.org' st_summary='The Astropy project is a common effort to develop a single core package for Astronomy.'></span>
+      <span class='st_twitter_large' displayText='Tweet' st_title='The Astropy Project: a common effort to develop a single core Python package for Astronomy!' st_url='http://www.astropy.org'></span>
+    </p>
+    {% endif %}
   </div>
 </footer>
 {%- endblock %}
