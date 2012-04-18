@@ -1,7 +1,6 @@
 {%- if pagename != "search" %}
-<form class="pull-left" action="http://astropy.readthedocs.org/en/latest/search.html" method="get">
+<form class="pull-left" action="http://readthedocs.org/search/project" method="get">
   <input type="text" name="q" placeholder="Search Documentation" />
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
+  <input type="hidden" name="selected_facets" value="project:Astropy" />
 </form>
 {%- endif %}
