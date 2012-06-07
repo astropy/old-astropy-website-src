@@ -45,6 +45,8 @@ clean:
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	test -d $(BUILDDIR)/html/affiliated || mkdir -p $(BUILDDIR)/html/affiliated
+	cp affiliated/registry.json $(BUILDDIR)/html/affiliated/registry.json
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
