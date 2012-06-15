@@ -5,6 +5,7 @@
 .. _`vo`: https://trac.assembla.com/astrolib
 .. _`asciitable`: http://cxc.harvard.edu/contrib/asciitable/
 .. _`astropy`: http://mail.scipy.org/mailman/listinfo/astropy
+.. _`astropy-dev`: http://groups.google.com/group/astropy-dev
 .. _`issue tracker`: http://github.com/astropy/astropy/issues
 .. _`documentation`: http://astropy.readthedocs.org/en/latest/install.html
 .. _`Numpy`: http://numpy.scipy.org
@@ -20,9 +21,6 @@
 
     </div>
 
-What is Astropy?
-----------------
-
 The Astropy project is a common effort to develop a single core package for
 Astronomy that brings together almost 100 developers from around the world.
 
@@ -30,12 +28,14 @@ Development is actively ongoing, with major packages such as `PyFITS`_,
 `PyWCS`_, `vo`_, and `asciitable`_ already merged in, and many more components
 being worked on. In particular, we are developing imaging, photometric, and
 spectroscopic functionality, as well as frameworks for cosmology, unit
-handling, and coordinate transformations. A first stable release is
-tentatively scheduled for early May.
+handling, and coordinate transformations
 
-Stay updated by following `@astropy <http://twitter.com/#!/astropy>`_ on Twitter, or sign up to the `astropy`_ mailing list!
+Stay updated by following `@astropy <http://twitter.com/#!/astropy>`_ on Twitter, or sign up to the `astropy`_ mailing list!  
 
-If you are interested in finding out more about the Astropy project, you can read the :doc:`original vision <vision>` for the package.
+If you want to get involved in Astropy development efforts, or other 
+more technical discussions of Astropy, join the `astropy-dev`_ list.
+
+If you are interested in a detailed description of the plan for the Astropy project, you can read the :doc:`original vision <vision>` for the package.
 
 Documentation
 -------------
@@ -75,8 +75,9 @@ If you do not get any errors, the installation was successful!
 Getting help
 ------------
 
-If you want to discuss issues with other Astropy users and with the
-developers, you can sign up to the `astropy`_ mailing list!
+If you want to discuss issues with other Astropy users, you can sign up
+to the `astropy`_ mailing list.  Alternatively, the `astropy-dev`_ list
+is where you should go to discuss more technical aspects of Astropy.
 
 Reporting issues
 ----------------
