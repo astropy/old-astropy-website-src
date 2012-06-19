@@ -35,7 +35,7 @@ being worked on. In particular, we are developing imaging, photometric, and
 spectroscopic functionality, as well as frameworks for cosmology, unit
 handling, and coordinate transformations. 
 
-The current stable version is |currentstable|.
+The current stable version is |currentstable|_.
 
 Stay updated by following `@astropy <http://twitter.com/#!/astropy>`_ on Twitter, or sign up to the `astropy`_ mailing list!
 
@@ -66,7 +66,7 @@ best way to install astropy is to use `pip`_::
 
     pip install astropy
     
-Or alternatively, you can download the source from the current version: |currentstable|,
+Or alternatively, you can download the source from the current version (|currentstable|_),
 and install the source code in that archive using::
 
     python setup.py install
