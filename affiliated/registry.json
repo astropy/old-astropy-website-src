@@ -34,7 +34,7 @@
             "stable": true,
             "home_url": "http://packages.python.org/Astropysics/",
             "repo_url": "http://github.com/eteq/astropysics.git",
-            "pypi_name": "astropysics"
+            "pypi_name": "Astropysics"
         }
     ]
 }
