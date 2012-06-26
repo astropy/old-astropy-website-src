@@ -58,6 +58,24 @@ Currently Registered Packages
         }
     }
 
+    var _email_regex_str = '[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}';
+    var _email_regex  = new RegExp(_email_regex_str, 'i');
+    var _email_with_name_regex  = new RegExp('(.+)<(' + _email_regex_str + ')>', 'i');
+
+    function maintainer_translator(maint, pkgnm) {
+        var url, match;
+        if (_email_with_name_regex.test(maint)) {
+            match = _email_with_name_regex.exec(maint);
+            url = 'mailto:' + match[2] + '?subject=Astropy%20affiliated%20package%20' + pkgnm;
+            return '<a href="' + url + '">' + match[1] + '</a>';
+        } else if (_email_regex.test(maint)) {
+            url = 'mailto:' + maint + '?subject=Astropy%20affiliated%20package%20' + pkgnm;
+            return '<a href="' + url + '">' + maint + '</a>';
+        } else {
+            return maint;
+        }
+    }
+
     function populateTable(data, tstat, xhr) {
         var tab = document.getElementsByTagName('table')[0];
         tab.deleteRow(1);
@@ -80,7 +98,7 @@ Currently Registered Packages
             pypicell.innerHTML = pypi_translator(pkgi.pypi_name);
             urlcell.innerHTML = url_translator(pkgi.home_url);
             repocell.innerHTML = url_translator(pkgi.repo_url);
-            maintcell.innerHTML = pkgi.maintainer;
+            maintcell.innerHTML = maintainer_translator(pkgi.maintainer, pkgi.name);
         }
     }
 
