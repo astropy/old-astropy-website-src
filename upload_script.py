@@ -70,9 +70,9 @@ def commit_to_page_repo(repodir, apywebsha, updatereason=''):
     safe_syscall(syscall2)
 
 
-def push_page_repo(repodir, remotename):
+def push_page_repo(repodir, remotename, branchname):
     continue_check('Want to push to page repo?')
-    syscall = 'cd ' + repodir + ';git push {0} master'.format(remotename)
+    syscall = 'cd ' + repodir + ';git push {0} {1}'.format(remotename, branchname)
     safe_syscall(syscall)
 
 
@@ -85,6 +85,8 @@ if __name__ == '__main__':
         dest='repo')
     ap.add_argument('--remote', '-e', default='origin',
         help='The name of the remote to push the final page repo to')
+    ap.add_argument('--branch', '-b', default='master',
+        help='The name of the branch to use on the page repo')
     ap.add_argument('--skip-rebuild-page', '-s', default=False,
         help='Skip the step of cleaning the current build of the page and '
         're-building it', dest='nobuild', action='store_true')
@@ -106,4 +108,4 @@ if __name__ == '__main__':
 
     copy_html_to_page_repo(repodir)
     commit_to_page_repo(repodir, apywebsha, args.reason)
-    push_page_repo(repodir, args.remote)
+    push_page_repo(repodir, args.remote, args.branch)
