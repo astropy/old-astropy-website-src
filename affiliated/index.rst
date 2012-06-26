@@ -33,6 +33,30 @@ Currently Registered Packages
     //reason.  Use basically any other modern browser, or it works fine if its
     //actually on the web server even with chrome.
 
+    function url_translator(urltext) {
+        if (urltext == undefined) {
+            return 'None';
+        } else {
+            return '<a href="' + urltext + '">' + urltext + '</a>';
+        }
+    }
+
+    function pypi_translator(pypiname) {
+        if (pypiname == undefined) {
+            return 'None';
+        } else {
+            var urltext = 'http://pypi.python.org/pypi/' + pypiname;
+            return '<a href="' + urltext + '">' + pypiname + '</a>';
+        }
+    }
+
+    function stable_translator(stable) {
+        if (stable) {
+            return 'Yes';
+        } else {
+            return 'No';
+        }
+    }
 
     function populateTable(data, tstat, xhr) {
         var tab = document.getElementsByTagName('table')[0];
@@ -41,7 +65,7 @@ Currently Registered Packages
         var pkgi, row, nmcell, stablecell, pypicell, urlcell, rpocell, maintcell;
         var pkgs = data.packages;
         for (i=0; i<pkgs.length; i++) {
-            pkgi = pkgs[i]
+            pkgi = pkgs[i];
             row = tab.insertRow(i + 1);
 
             nmcell = row.insertCell(0);
@@ -52,10 +76,10 @@ Currently Registered Packages
             maintcell = row.insertCell(5);
 
             nmcell.innerHTML = pkgi.name;
-            stablecell.innerHTML = pkgi.stable;
-            pypicell.innerHTML = pkgi.pypi_name;
-            urlcell.innerHTML = pkgi.home_url;
-            repocell.innerHTML = pkgi.repo_url;
+            stablecell.innerHTML = stable_translator(pkgi.stable);
+            pypicell.innerHTML = pypi_translator(pkgi.pypi_name);
+            urlcell.innerHTML = url_translator(pkgi.home_url);
+            repocell.innerHTML = url_translator(pkgi.repo_url);
             maintcell.innerHTML = pkgi.maintainer;
         }
     }
