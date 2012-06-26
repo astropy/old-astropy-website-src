@@ -1,14 +1,37 @@
 :orphan:
 
+
 Astropy Affilated Package Registry
 ----------------------------------
 
-Description of apkg's here
+A major part of the Astropy project is the existence of "Affiliated
+Packages". An affiliated package is an astronomy-related python package
+that is not part of the `astropy` core source code, but has requested to
+be included in the Astropy project. The projects are expressing an
+interest in Astropy's goals of improving reuse, interoperability, and
+interface standards for python astronomy and astrophysics packages.
+
+This page houses the official registry for affiliated packages. The
+table below lists these packages, as determined from the
+http://affiliated.astropy.org/registry.json file that contains the actual
+registry. The following information is included for each package:
+
+* The name of the package.
+* The name of the author/maintainer of the package.
+* It's "stability" status. The exact meaning of this is not fully defined,
+  but it should be used as a guide for whether or not the package maintainer
+  wants you to consider the package as "working," and not under heavy
+  development or similar.
+* The web page of the package.
+* The source code repository for the package.
+* The package's `PyPI <http://pypi.python.org/>`_ entry (if it has one).
 
 Registering Packages
 ^^^^^^^^^^^^^^^^^^^^
 
-Give instructions here for registering
+To include your python astronomy package in this registry, contact the
+coordination committe by e-mailing `astropy.team@gmail.com
+<mailto:astropy.team@gmail.com?subject=Affiliated%20package%20registration%20request%20for%20YOURPKGNAMEHERE>`_.
 
 
 Currently Registered Packages
