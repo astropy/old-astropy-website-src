@@ -79,26 +79,35 @@ Currently Registered Packages
     function populateTable(data, tstat, xhr) {
         var tab = document.getElementsByTagName('table')[0];
         tab.deleteRow(1);
+        var ncols = tab.rows[0].cells.length;
 
         var pkgi, row, nmcell, stablecell, pypicell, urlcell, rpocell, maintcell;
-        var pkgs = data.packages;
-        for (i=0; i<pkgs.length; i++) {
-            pkgi = pkgs[i];
-            row = tab.insertRow(i + 1);
+        if (data == null) {
+            row = tab.insertRow(1);
+            row.insertCell(0).innerHTML = 'Could not load registry file!';
+            for (i=0;i<(ncols - 1);i++) {
+                row.insertCell(i + 1).innerHTML = ' ';
+            }
+        } else {
+            var pkgs = data.packages;
+            for (i=0; i<pkgs.length; i++) {
+                pkgi = pkgs[i];
+                row = tab.insertRow(i + 1);
 
-            nmcell = row.insertCell(0);
-            stablecell = row.insertCell(1);
-            pypicell = row.insertCell(2);
-            urlcell = row.insertCell(3);
-            repocell = row.insertCell(4);
-            maintcell = row.insertCell(5);
+                nmcell = row.insertCell(0);
+                stablecell = row.insertCell(1);
+                pypicell = row.insertCell(2);
+                urlcell = row.insertCell(3);
+                repocell = row.insertCell(4);
+                maintcell = row.insertCell(5);
 
-            nmcell.innerHTML = pkgi.name;
-            stablecell.innerHTML = stable_translator(pkgi.stable);
-            pypicell.innerHTML = pypi_translator(pkgi.pypi_name);
-            urlcell.innerHTML = url_translator(pkgi.home_url);
-            repocell.innerHTML = url_translator(pkgi.repo_url);
-            maintcell.innerHTML = maintainer_translator(pkgi.maintainer, pkgi.name);
+                nmcell.innerHTML = pkgi.name;
+                stablecell.innerHTML = stable_translator(pkgi.stable);
+                pypicell.innerHTML = pypi_translator(pkgi.pypi_name);
+                urlcell.innerHTML = url_translator(pkgi.home_url);
+                repocell.innerHTML = url_translator(pkgi.repo_url);
+                maintcell.innerHTML = maintainer_translator(pkgi.maintainer, pkgi.name);
+            }
         }
     }
 
