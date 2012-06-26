@@ -35,12 +35,14 @@ handling, and coordinate transformations.
 
 The current stable version is |currentstable|_.
 
-Stay updated by following `@astropy <http://twitter.com/#!/astropy>`_ on Twitter, or sign up to the `astropy`_ mailing list!  
+Stay updated by following `@astropy <http://twitter.com/#!/astropy>`_ on Twitter, and sign up for the `astropy`_ mailing list, where you can ask python astronomy
+questions of all sorts!  If you want to get involved in Astropy development
+efforts, or other  more technical discussions of Astropy, join the 
+`astropy-dev`_ list.
 
-If you want to get involved in Astropy development efforts, or other 
-more technical discussions of Astropy, join the `astropy-dev`_ list.
-
-If you are interested in a detailed description of the plan for the Astropy project, you can read the :doc:`original vision <vision>` for the package.
+If you are interested in a detailed description of the plan for the Astropy
+project, you can read the :doc:`original vision <vision>`, or the 
+`documentation overview <http://docs.astropy.org/en/latest/overview.html>`_.
 
 Documentation
 -------------
