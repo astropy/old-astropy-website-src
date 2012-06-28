@@ -30,12 +30,17 @@ To make this work correctly, a few things must be true:
 
 """[1:-1]
 
+DRYRUN = False
+
 
 def safe_syscall(cmd):
-    res = subprocess.call(cmd, shell=True)
-    if res != 0:
-        print 'Command line call failed! Exiting...'
-        exit(res)
+    if DRYRUN:
+        print 'DRY RUN! Command wound have been:', cmd
+    else:
+        res = subprocess.call(cmd, shell=True)
+        if res != 0:
+            print 'Command line call failed! Exiting...'
+            exit(res)
 
 
 def continue_check(msg, defaultyes=True):
@@ -81,7 +86,10 @@ def remake_page():
     builddir = path.abspath('_build')
     if path.exists(builddir):
         continue_check('Wipe old _build dir {0}?'.format(builddir))
-        rmtree(builddir)
+        if DRYRUN:
+            print 'DRY RUN! Would have deleted directory',builddir
+        else:
+            rmtree(builddir)
     print 'Building new page'
     safe_syscall('make html')
 
@@ -104,6 +112,8 @@ def commit_to_page_repo(repodir, apywebsha, updatereason=''):
     else:
         commitmsg = 'Updated page \n(commit {0} in astropy-website)'.format(apywebsha)
 
+    continue_check('Want to commit to local page repo with message "{0}"?'.format(commitmsg))
+
     syscall1 = 'cd ' + repodir + ';git add *'
     syscall2 = 'cd ' + repodir + ';git commit -m "{0}"'.format(commitmsg)
     print 'Adding to page repo'
@@ -119,10 +129,13 @@ def push_page_repo(repodir, remotename, branchname):
 
 
 if __name__ == '__main__':
-    descr = _instructions_description[:_instructions_description.index('.')+1]
+    descr = _instructions_description[:_instructions_description.index('.') + 1]
     ap = ArgumentParser(description=descr)
-    ap.add_argument('-l','--long-help', default=False, dest='longhelp',
+    ap.add_argument('-l', '--long-help', default=False, dest='longhelp',
         help='Print the installation/usage instructions', action='store_true')
+    ap.add_argument('--dry-run', '-y', default=False, dest='dryrun',
+        help='Don\'t actually do anything - just show what would have happened',
+        action='store_true')
     ap.add_argument('--reason', '-r', default='',
         help='The reason for the commit (used in the commit message)')
     ap.add_argument('--repo-dir', '-d', default='../astropy.github.com',
@@ -137,6 +150,8 @@ if __name__ == '__main__':
         're-building it', dest='nobuild', action='store_true')
 
     args = ap.parse_args()
+
+    DRYRUN = args.dryrun
 
     if args.longhelp:
         print _instructions_description
