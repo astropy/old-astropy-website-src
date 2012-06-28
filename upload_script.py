@@ -35,7 +35,7 @@ DRYRUN = False
 
 def safe_syscall(cmd):
     if DRYRUN:
-        print 'DRY RUN! Command wound have been:', cmd
+        print 'DRY RUN! Command would have been:', cmd
     else:
         res = subprocess.call(cmd, shell=True)
         if res != 0:
@@ -85,7 +85,7 @@ def get_current_sha():
 def remake_page():
     builddir = path.abspath('_build')
     if path.exists(builddir):
-        continue_check('Wipe old _build dir {0}?'.format(builddir))
+        continue_check('Wipe old _build dir {0} and rebuild?'.format(builddir))
         if DRYRUN:
             print 'DRY RUN! Would have deleted directory',builddir
         else:
@@ -101,8 +101,7 @@ def remake_page():
 def copy_html_to_page_repo(repodir):
     htmldir = path.abspath('_build/html')
     syscall = 'cp {0} {1}'.format(path.join(htmldir, '*'), repodir)
-    print 'Copying contents of', htmldir, 'to', repodir
-    print syscall
+    continue_check('Copy contents of {0} to {1}?'.format(htmldir, repodir))
     safe_syscall(syscall)
 
 
