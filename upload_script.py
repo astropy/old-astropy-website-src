@@ -100,7 +100,7 @@ def remake_page():
 
 def copy_html_to_page_repo(repodir):
     htmldir = path.abspath('_build/html')
-    syscall = 'cp {0} {1}'.format(path.join(htmldir, '*'), repodir)
+    syscall = 'cp -r {0} {1}'.format(path.join(htmldir, '*'), repodir)
     continue_check('Copy contents of {0} to {1}?'.format(htmldir, repodir))
     safe_syscall(syscall)
 
