@@ -43,11 +43,29 @@ def safe_syscall(cmd):
             exit(res)
 
 
-def continue_check(msg, defaultyes=True):
-    yn = '[y]/n' if defaultyes else 'y/[n]'
-    res = raw_input(msg + ' ' + yn + ':')
-    if defaultyes and res == '' or res == 'y':
-        return
+def continue_check(msg, default='y'):
+    if default not in 'ynq':
+        raise ValueError('invalid continue_check default ' + str(default))
+        
+    if default == 'y':
+        opstr = '[y]/n/q'
+    elif default == 'n':
+        opstr = 'y/[n]/q'
+    elif default == 'q':
+        opstr = 'y/n/[q]'
+
+    res = raw_input(msg + ' ' + opstr + ':')
+    
+    if res == '':
+        res = default
+    elif res not in 'ynq':
+        print 'Invalid entry',res,'...exiting!'
+        exit(1)
+        
+    if res == 'y':
+        return True
+    elif res == 'n':
+        return False
     else:
         print 'You chose to quit... exiting!'
         exit(1)
@@ -85,13 +103,16 @@ def get_current_sha():
 def remake_page():
     builddir = path.abspath('_build')
     if path.exists(builddir):
-        continue_check('Wipe old _build dir {0} and rebuild?'.format(builddir))
-        if DRYRUN:
-            print 'DRY RUN! Would have deleted directory',builddir
-        else:
-            rmtree(builddir)
-    print 'Building new page'
-    safe_syscall('make html')
+        if continue_check('Wipe old _build dir {0} before rebuilding?'.format(builddir)):
+            if DRYRUN:
+                print 'DRY RUN! Would have deleted directory',builddir
+            else:
+                rmtree(builddir)
+                print 'Rebuilding page'
+                safe_syscall('make html')
+    else: 
+        print 'Building new page'
+        safe_syscall('make html')
 
     if not path.isdir(builddir):
         print 'Build could not be found in', builddir, 'Exiting...'
@@ -102,14 +123,14 @@ def copy_html_to_page_repo(repodir):
     htmldir = path.abspath('_build/html')
     
     #pull h
-    continue_check('Update git repo at {0}?'.format(repodir))
-    syscall = 'cd {0};git pull'.format(repodir)
-    safe_syscall(syscall)
+    if continue_check('Update git repo at {0}?'.format(repodir)):
+        syscall = 'cd {0};git pull'.format(repodir)
+        safe_syscall(syscall)
     
     #copy file
-    continue_check('Copy contents of {0} to {1}?'.format(htmldir, repodir))
-    syscall = 'cp -r {0} {1}'.format(path.join(htmldir, '*'), repodir)
-    safe_syscall(syscall)
+    if continue_check('Copy contents of {0} to {1}?'.format(htmldir, repodir)):
+        syscall = 'cp -r {0} {1}'.format(path.join(htmldir, '*'), repodir)
+        safe_syscall(syscall)
 
 
 def commit_to_page_repo(repodir, apywebsha, updatereason=''):
@@ -118,20 +139,19 @@ def commit_to_page_repo(repodir, apywebsha, updatereason=''):
     else:
         commitmsg = 'Updated page \n(commit {0} in astropy-website)'.format(apywebsha)
 
-    continue_check('Want to commit to local page repo with message "{0}"?'.format(commitmsg))
-
-    syscall1 = 'cd ' + repodir + ';git add *'
-    syscall2 = 'cd ' + repodir + ';git commit -m "{0}"'.format(commitmsg)
-    print 'Adding to page repo'
-    safe_syscall(syscall1)
-    print 'Comitting to page repo with message: "{0}"'.format(commitmsg)
-    safe_syscall(syscall2)
+    if continue_check('Want to commit to local page repo with message "{0}"?'.format(commitmsg)):
+        syscall1 = 'cd ' + repodir + ';git add *'
+        syscall2 = 'cd ' + repodir + ';git commit -m "{0}"'.format(commitmsg)
+        print 'Adding to page repo'
+        safe_syscall(syscall1)
+        print 'Comitting to page repo with message: "{0}"'.format(commitmsg)
+        safe_syscall(syscall2)
 
 
 def push_page_repo(repodir, remotename, branchname):
-    continue_check('Want to push to page repo?')
-    syscall = 'cd ' + repodir + ';git push {0} {1}'.format(remotename, branchname)
-    safe_syscall(syscall)
+    if continue_check('Want to push to page repo?'):
+        syscall = 'cd ' + repodir + ';git push {0} {1}'.format(remotename, branchname)
+        safe_syscall(syscall)
 
 
 if __name__ == '__main__':
