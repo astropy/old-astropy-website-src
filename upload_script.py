@@ -100,8 +100,15 @@ def remake_page():
 
 def copy_html_to_page_repo(repodir):
     htmldir = path.abspath('_build/html')
-    syscall = 'cp -r {0} {1}'.format(path.join(htmldir, '*'), repodir)
+    
+    #pull h
+    continue_check('Update git repo at {0}?'.format(repodir))
+    syscall = 'cd {0};git pull'.format(repodir)
+    safe_syscall(syscall)
+    
+    #copy file
     continue_check('Copy contents of {0} to {1}?'.format(htmldir, repodir))
+    syscall = 'cp -r {0} {1}'.format(path.join(htmldir, '*'), repodir)
     safe_syscall(syscall)
 
 
