@@ -97,7 +97,7 @@ html_theme_path = ['_themes']
 # (Optional) Logo. Should be exactly 32x32 px to fit the nav. bar.
 # Path should be relative to the html_static_path setting (e.g.,
 # "_static") in source.
-html_logo = "logos/astropy_word_26.png"
+html_logo = "logos/astropy_word_32.png"
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
