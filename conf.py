@@ -97,7 +97,7 @@ html_theme_path = ['_themes']
 # (Optional) Logo. Should be exactly 32x32 px to fit the nav. bar.
 # Path should be relative to the html_static_path setting (e.g.,
 # "_static") in source.
-html_logo = "logos/astropy_word_26.png"
+html_logo = "logos/astropy_word_32.png"
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
@@ -125,7 +125,7 @@ html_short_title = ''
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-html_favicon = 'astropy.ico'
+html_favicon = 'astropy_logo.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
