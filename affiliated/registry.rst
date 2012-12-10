@@ -1,5 +1,7 @@
 :orphan:
 
+.. _registry:
+
 Astropy Affiliated Package Registry
 -----------------------------------
 

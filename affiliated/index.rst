@@ -1,3 +1,5 @@
+:orphan:
+
 Packages affiliated with the Astropy project
 ============================================
 
@@ -15,7 +17,7 @@ mailing list!
 Python-montage
 --------------
 
-.. |mont| image:: affiliated/montage.png
+.. |mont| image:: montage.png
 .. _Documentation: http://montage-wrapper.readthedocs.org/en/latest/
 .. _Installation Instructions: http://montage-wrapper.readthedocs.org/en/latest/#installation
 
@@ -45,3 +47,9 @@ A few additional affiliated packages are currently in development, including:
 * `kcorrect <https://github.com/astropy/kcorrect>`_: Python bindings to kcorrect code of Blanton et al. 2007
 
 These packages are still very much in development, and the user interface (API) may not be stable. If you do try these packages, please do report any issues to the developers, so 
+
+Registry
+--------
+
+To see the full list of registered affiliated packags, or for information on
+registering your package, see the :ref:`registry`.
