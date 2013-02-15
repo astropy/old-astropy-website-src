@@ -1,5 +1,3 @@
-.. title:: Welcome
-
 .. _`PyFITS`: http://www.stsci.edu/institute/software_hardware/pyfits
 .. _`PyWCS`: https://trac.assembla.com/astrolib
 .. _`vo`: https://trac.assembla.com/astrolib
@@ -56,6 +54,8 @@ automatically updated any time a change is made to the
 
 * `Stable version (docs.astropy.org) <http://docs.astropy.org>`_
 * `Latest developer version (devdocs.astropy.org) <http://devdocs.astropy.org>`_ 
+
+A full list of archived documentation can be found at :doc:`docs`.
     
 
 
