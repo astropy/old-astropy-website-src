@@ -36,7 +36,6 @@ def replace_team(app, docname, source):
 
             # now actually use the new source - this is what sphinx processes
             source[0] = '\n'.join(newcreditslines)
-            print source
 
 
 def get_astropy_credits(warner):
