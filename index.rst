@@ -10,8 +10,8 @@
 .. _`Python`: http://www.python.org
 .. _`pip`: http://pypi.python.org/pypi/pip
 .. _`Cython`: http://cython.org/
-.. |currentstable| replace:: Astropy 0.1 
-.. _currentstable: http://cloud.github.com/downloads/astropy/astropy/astropy-0.1.tar.gz
+.. |currentstable| replace:: Astropy 0.2 
+.. _currentstable: http://pypi.python.org/packages/source/a/astropy/astropy-0.2.tar.gz
 
 .. raw:: html
 
@@ -23,14 +23,13 @@
 
     </div>
 
-The Astropy project is a common effort to develop a single core package for
-Astronomy that brings together almost 100 developers from around the world.
-
+The Astropy Project is a community effort to develop a single core package for 
+Astronomy in `Python`_ and foster interoperability between `Python`_ astronomy packages.
 Development is actively ongoing, with major packages such as `PyFITS`_,
-`PyWCS`_, `vo`_, and `asciitable`_ already merged in, and many more components
-being worked on. In particular, we are developing imaging, photometric, and
-spectroscopic functionality, as well as frameworks for cosmology, unit
-handling, and coordinate transformations. 
+`PyWCS`_, `vo`_, and `asciitable`_ already merged in, and many other components
+are under development. For more details, on the plan for the Astropy
+project, you can read the :doc:`original vision <vision>`, or the 
+`documentation overview <http://docs.astropy.org/en/latest/overview.html>`_.
 
 The current stable version is |currentstable|_.
 
@@ -39,9 +38,6 @@ questions of all sorts!  If you want to get involved in Astropy development
 efforts, or other  more technical discussions of Astropy, join the 
 `astropy-dev`_ list.
 
-If you are interested in a detailed description of the plan for the Astropy
-project, you can read the :doc:`original vision <vision>`, or the 
-`documentation overview <http://docs.astropy.org/en/latest/overview.html>`_.
 
 Documentation
 -------------
