@@ -2,6 +2,15 @@
 {% set script_files = script_files + ['_static/bootstrap-dropdown.js', '_static/bootstrap-scrollspy.js'] %}
 {% set css_files = ['_static/bootstrap.css', '_static/bootstrap-sphinx.css'] + css_files %}
 
+// Override the title on just the front page.
+{%- block htmltitle %}
+{% if pagename == "index" %}
+    <title>Astropy</title>
+{% else %}
+    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+{% endif %}
+{%- endblock %}
+
 {# Sidebar: Rework into our Boostrap nav section. #}
 {% macro navBar() %}
   <div class="topbar" data-scrollspy="scrollspy" >
