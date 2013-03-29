@@ -8,13 +8,6 @@
             "repo_url": "http://github.com/astropy/specutils.git"
         },
         {
-            "name": "pyidlastro",
-            "maintainer": "Tom Aldcroft",
-            "stable": false,
-            "home_url": "https://github.com/astropy/pyidlastro",
-            "repo_url": "http://github.com/astropy/pyidlastro.git"
-        },
-        {
             "name": "photutils",
             "maintainer": "Rene Breton",
             "stable": false,
