@@ -5,7 +5,8 @@
             "maintainer": "Wolfgang Kerzendorf",
             "stable": false,
             "home_url": "https://github.com/astropy/specutils",
-            "repo_url": "http://github.com/astropy/specutils.git"
+            "repo_url": "http://github.com/astropy/specutils.git",
+            "pypy_name": "specutils"
         },
         {
             "name": "photutils",
