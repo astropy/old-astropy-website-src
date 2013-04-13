@@ -1,6 +1,14 @@
 {
     "packages": [
         {
+            "name": "astroquery",
+            "maintainer": "Adam Ginsburg <adam.g.ginsburg@gmail.com>",
+            "stable": false,
+            "home_url": "http://astroquery.readthedocs.org/",
+            "repo_url": "https://github.com/astropy/astroquery",
+            "pypi_name": "astroquery"
+        },
+        {
             "name": "specutils",
             "maintainer": "Wolfgang Kerzendorf",
             "stable": false,
