@@ -9,6 +9,14 @@
             "pypy_name": "specutils"
         },
         {
+            "name": "astroquery",
+            "maintainer": "Adam Ginsburg <adam.g.ginsburg@gmail.com>",
+            "stable": false,
+            "home_url": "https://github.com/astropy/astroquery",
+            "repo_url": "http://github.com/astropy/astroquery.git",
+            "pypy_name": "astroquery"
+        },
+        {
             "name": "photutils",
             "maintainer": "Rene Breton",
             "stable": false,
