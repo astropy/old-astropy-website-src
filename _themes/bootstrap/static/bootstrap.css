@@ -262,12 +262,12 @@ a:hover {
 }
 .pull-right {
   float: right;
-  width: 280px;
+  width: 240px;
   text-align: right;
 }
 .pull-left {
   float: left;
-  width: 280px;
+  width: 240px;
   text-align: left;
 }
 .hide {
