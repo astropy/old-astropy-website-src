@@ -17,22 +17,24 @@ Montage-wrapper
 ---------------
 
 .. |mont| image:: montage.png
-.. _Montage Documentation: http://montage-wrapper.readthedocs.org/en/latest/
-.. _Montage Installation: http://montage-wrapper.readthedocs.org/en/latest/#installation
 
-+--------+-------------------------------------------------------------------+
-| |mont| | **About:** Montage-wrapper is a pure Python module that provides a|
-|        | Python API to the Montage Astronomical Image Mosaic Engine,       |
-|        | including both functions to access individual Montage commands,   |
-|        | and high-level functions to facilitate mosaicking and             |
-|        | re-projecting. Python-montage uses the Astropy core package for   |
-|        | reading and writing FITS files.                                   |
-|        |                                                                   |
-|        | **Developer:** Thomas Robitaille                                  |
-|        |                                                                   |
-|        | `Montage Documentation`_ - `Montage Installation`_                |
-|        |                                                                   |
-+--------+-------------------------------------------------------------------+
+.. _Montage-wrapper Home: http://www.astropy.org/montage-wrapper
+.. _Montage-wrapper Documentation: http://montage-wrapper.readthedocs.org/
+.. _Montage-wrapper Installation: http://montage-wrapper.readthedocs.org/en/latest/#installation
+
++--------+---------------------------------------------------------------------------------------------+
+| |mont| | **About:** Montage-wrapper is a pure Python module that provides a                          |
+|        | Python API to the Montage Astronomical Image Mosaic Engine,                                 |
+|        | including both functions to access individual Montage commands,                             |
+|        | and high-level functions to facilitate mosaicking and                                       |
+|        | re-projecting. Python-montage uses the Astropy core package for                             |
+|        | reading and writing FITS files.                                                             |
+|        |                                                                                             |
+|        | **Developer:** Thomas Robitaille                                                            |
+|        |                                                                                             |
+|        | `Montage-wrapper Home`_ - `Montage-wrapper Documentation`_ - `Montage-wrapper Installation`_|
+|        |                                                                                             |
++--------+---------------------------------------------------------------------------------------------+
 
 Ginga
 -----
