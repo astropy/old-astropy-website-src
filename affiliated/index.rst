@@ -13,8 +13,8 @@ interface standards for python astronomy and astrophysics packages.
 If you are the developer of an astronomy package, and would like to become
 affiliated with the Astropy project, please drop us a line on the `astropy-dev <http://groups.google.com/group/astropy-dev>`_ mailing list!
 
-Python-montage
---------------
+Montage-wrapper
+---------------
 
 .. |mont| image:: montage.png
 .. _Montage Documentation: http://montage-wrapper.readthedocs.org/en/latest/
