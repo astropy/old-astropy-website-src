@@ -1,7 +1,7 @@
 :orphan:
 
-Packages affiliated with the Astropy project
-============================================
+About affiliated packages
+=========================
 
 A major part of the Astropy project is the existence of "Affiliated
 Packages". An affiliated package is an astronomy-related Python package
@@ -13,34 +13,44 @@ interface standards for python astronomy and astrophysics packages.
 If you are the developer of an astronomy package, and would like to become
 affiliated with the Astropy project, please drop us a line on the `astropy-dev <http://groups.google.com/group/astropy-dev>`_ mailing list!
 
+Featured packages
+=================
+
 Montage-wrapper
 ---------------
 
 .. |mont| image:: montage.png
 
-.. _Montage-wrapper Home: http://www.astropy.org/montage-wrapper
-.. _Montage-wrapper Documentation: http://montage-wrapper.readthedocs.org/
-.. _Montage-wrapper Installation: http://montage-wrapper.readthedocs.org/en/latest/#installation
+.. |monthome| replace:: Home
+.. _monthome: http://www.astropy.org/montage-wrapper
 
-+--------+---------------------------------------------------------------------------------------------+
-| |mont| | **About:** Montage-wrapper is a pure Python module that provides a                          |
-|        | Python API to the Montage Astronomical Image Mosaic Engine,                                 |
-|        | including both functions to access individual Montage commands,                             |
-|        | and high-level functions to facilitate mosaicking and                                       |
-|        | re-projecting. Python-montage uses the Astropy core package for                             |
-|        | reading and writing FITS files.                                                             |
-|        |                                                                                             |
-|        | **Developer:** Thomas Robitaille                                                            |
-|        |                                                                                             |
-|        | `Montage-wrapper Home`_ - `Montage-wrapper Documentation`_ - `Montage-wrapper Installation`_|
-|        |                                                                                             |
-+--------+---------------------------------------------------------------------------------------------+
+.. |montdocs| replace:: Documentation
+.. _montdocs: http://montage-wrapper.readthedocs.org/
+
+.. |montinst| replace:: Installation
+.. _montinst: http://montage-wrapper.readthedocs.org/en/latest/#installation
+
++--------+-------------------------------------------------------------------+
+| |mont| | **About:** Montage-wrapper is a pure Python module that provides a|
+|        | Python API to the Montage Astronomical Image Mosaic Engine,       |
+|        | including both functions to access individual Montage commands,   |
+|        | and high-level functions to facilitate mosaicking and             |
+|        | re-projecting. Python-montage uses the Astropy core package for   |
+|        | reading and writing FITS files.                                   |
+|        |                                                                   |
+|        | **Developer:** Thomas Robitaille                                  |
+|        |                                                                   |
+|        | |monthome|_ - |montdocs|_ - |montinst|_                           |
+|        |                                                                   |
++--------+-------------------------------------------------------------------+
 
 Ginga
 -----
 
 .. |ginga| image:: ginga.png
-.. _Ginga Home and Installation: http://ejeschke.github.io/ginga/
+
+.. |gingahome| replace:: Home and Installation
+.. _gingahome: http://ejeschke.github.io/ginga/
 
 +--------+-------------------------------------------------------------------+
 ||ginga| | **About:** Ginga is a viewer for astronomical data FITS (Flexible |
@@ -51,7 +61,7 @@ Ginga
 |        |                                                                   |
 |        | **Developer:** Eric Jeschkee                                      |
 |        |                                                                   |
-|        | `Ginga Home and Installation`_                                    |
+|        | |gingahome|_                                                      |
 |        |                                                                   |
 +--------+-------------------------------------------------------------------+
 
@@ -60,9 +70,15 @@ APLpy
 -----
 
 .. |aplpy| image:: aplpy.png
-.. _APLpy Home: http://aplpy.github.io
-.. _APLpy Documentation: http://aplpy.readthedocs.org
-.. _APLpy Installation: http://aplpy.github.io/install.html
+
+.. |aplpyhome| replace:: Home
+.. _aplpyhome: http://aplpy.github.io
+
+.. |aplpydocs| replace:: Documentation
+.. _aplpydocs: http://aplpy.readthedocs.org
+
+.. |aplpyinst| replace:: Installation
+.. _aplpyinst: http://aplpy.github.io/install.html
 
 +--------+-------------------------------------------------------------------+
 ||aplpy| | **About:** APLpy (the Astronomical Plotting Library in Python) is |
@@ -74,11 +90,18 @@ APLpy
 |        |                                                                   |
 |        | **Developers:** Thomas Robitaille, Eli Bressert, Adam Ginsburg    |
 |        |                                                                   |
-|        | `APLpy Home`_ - `APLpy Documentation`_ - `APLpy Installation`_    |
+|        | |aplpyhome|_ - |aplpydocs|_ - |aplpyinst|_                        |
 |        |                                                                   |
 +--------+-------------------------------------------------------------------+
 
+Other packages
+==============
 
+Stable packages
+---------------
+
+* `astroML <http://astroml.github.com/>`_: tools for machine learning and data mining in Astronomy
+* `Astropysics <http://packages.python.org/Astropysics/>`_: library of IDL astronomy routines converted to Python.
 
 In development
 --------------
@@ -93,7 +116,7 @@ A few additional affiliated packages are currently in development, including:
 These packages are still very much in development, and the user interface (API) may not be stable. If you do try these packages, please do report any issues to the developers, so 
 
 Affiliated Package Registry
----------------------------
+===========================
 
 The following table below lists all currently registered affiliated packages.
 This table is determined from the http://affiliated.astropy.org/registry.json
