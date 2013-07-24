@@ -5,7 +5,7 @@
 .. _`astropy`: http://mail.scipy.org/mailman/listinfo/astropy
 .. _`astropy-dev`: http://groups.google.com/group/astropy-dev
 .. _`issue tracker`: http://github.com/astropy/astropy/issues
-.. _`documentation`: http://astropy.readthedocs.org/en/stable/install.html
+.. _`latest documentation`: http://astropy.readthedocs.org/en/latest/install.html
 .. _`Numpy`: http://numpy.scipy.org
 .. _`Python`: http://www.python.org
 .. _`pip`: http://pypi.python.org/pypi/pip
@@ -60,7 +60,7 @@ automatically updated any time a change is made to the
 Installing
 ----------
 
-Detailed installation instructions are provided in the `documentation`_, but
+Detailed up-to-date installation instructions are provided in the `latest documentation`_, but
 we have included a simplified version here.
 
 Astropy requires `Python`_ 2.6, 2.7, 3.1, 3.2, or 3.3, and `Numpy`_ 1.4 or later. The 
@@ -113,4 +113,3 @@ for Astronomy (Astropy Collaboration, 2013).*
 
 where *(Astropy Collaboration, 2013)* is a citation to `this paper
 <PLACEHOLDER>`_ (`BibTeX <PLACEHOLDER>`_).
-
