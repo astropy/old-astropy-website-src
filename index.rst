@@ -5,7 +5,7 @@
 .. _`astropy`: http://mail.scipy.org/mailman/listinfo/astropy
 .. _`astropy-dev`: http://groups.google.com/group/astropy-dev
 .. _`issue tracker`: http://github.com/astropy/astropy/issues
-.. _`documentation`: http://astropy.readthedocs.org/en/latest/install.html
+.. _`documentation`: http://astropy.readthedocs.org/en/stable/install.html
 .. _`Numpy`: http://numpy.scipy.org
 .. _`Python`: http://www.python.org
 .. _`pip`: http://pypi.python.org/pypi/pip
