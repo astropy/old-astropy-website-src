@@ -39,8 +39,7 @@ efforts, or other  more technical discussions of Astropy, join the
 `astropy-dev`_ list.
 
 **Please note:** If you use Astropy for work/research presented in a
-publication (whether directly, or as a dependency to another package), please
-read the section on See `Acknowledging the use of Astropy`_.
+publication, please read `Acknowledging the use of Astropy`_.
 
 Documentation
 -------------
@@ -105,8 +104,9 @@ ticket in the Astropy `issue tracker`_, and we will look into it promptly!
 Acknowledging the use of Astropy
 --------------------------------
 
-If you use Astropy for a publication, please include the following
-acknowledgment and citation:
+If you use Astropy for work/research presented in a publication (whether
+directly, or as a dependency to another package), we would be grateful if you
+could include the following acknowledgment:
 
 *This research made use of Astropy, a community-developed core Python package
 for Astronomy (Astropy Collaboration, 2013).*
