@@ -112,4 +112,4 @@ acknowledgment and citation:
 for Astronomy (Astropy Collaboration, 2013).*
 
 where *(Astropy Collaboration, 2013)* is a citation to `this paper
-<PLACEHOLDER>`_ (`BibTeX <PLACEHOLDER>`_).
+<http://arxiv.org/abs/1307.6212>`_.
