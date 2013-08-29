@@ -76,6 +76,14 @@
             "home_url": "http://aplpy.github.io",
             "repo_url": "http://github.com/aplpy/aplpy.git",
             "pypi_name": "APLpy"
+        },
+        {
+            "name": "gammapy",
+            "maintainer": "Christoph Deil <Deil.Christoph@gmail.com>",
+            "stable": false,
+            "home_url": "https://github.com/gammapy/gammapy",
+            "repo_url": "http://github.com/gammapy/gammapy.git"
+            "pypi_name": "gammapy"
         }
     ]
 }
