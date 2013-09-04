@@ -14,10 +14,10 @@ def setup(app):
 def replace_team(app, docname, source):
     if docname == 'team':
 
-        credits = get_astropy_credits(app.warn).decode('utf-8')
+        credits = get_astropy_credits(app.warn)
 
         if credits is not False:
-            creditslines = credits.split('\n')
+            creditslines = credits.decode('utf-8').split('\n')
 
             newcreditslines = []
             for l in creditslines:
