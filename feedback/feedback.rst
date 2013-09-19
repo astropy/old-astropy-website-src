@@ -9,7 +9,7 @@ There are several ways in which you can give us feedback:
 * If you would like to give us feedback and participate in discussions, we
   encourage you to join the astropy_ mailing list and post
   there. This should be the preferred way if you are interested in having a
-  discussion with the developers.
+  discussion with the developers and other users.
 
 * If you have feedback you would prefer to keep private,  you can e-mail
   `feedback@astropy.org`_.  This address points to a private mailing list that
