@@ -31,6 +31,7 @@ To make this work correctly, a few things must be true:
 """[1:-1]
 
 DRYRUN = False
+FORCE = False
 
 
 def safe_syscall(cmd):
@@ -46,7 +47,19 @@ def safe_syscall(cmd):
 def continue_check(msg, default='y'):
     if default not in 'ynq':
         raise ValueError('invalid continue_check default ' + str(default))
-        
+
+    if FORCE:
+        if default == 'y':
+            print msg + ' <y forced>'
+            return True
+        elif default == 'n':
+            print msg + ' <n forced>'
+            return False
+        else:
+            print msg + ' <q forced>'
+            print 'You chose to quit... exiting!'
+            exit(1)
+
     if default == 'y':
         opstr = '[y]/n/q'
     elif default == 'n':
@@ -55,13 +68,13 @@ def continue_check(msg, default='y'):
         opstr = 'y/n/[q]'
 
     res = raw_input(msg + ' ' + opstr + ':')
-    
+
     if res == '':
         res = default
     elif res not in 'ynq':
         print 'Invalid entry',res,'...exiting!'
         exit(1)
-        
+
     if res == 'y':
         return True
     elif res == 'n':
@@ -110,7 +123,7 @@ def remake_page():
                 rmtree(builddir)
                 print 'Rebuilding page'
                 safe_syscall('make html')
-    else: 
+    else:
         print 'Building new page'
         safe_syscall('make html')
 
@@ -121,12 +134,12 @@ def remake_page():
 
 def copy_html_to_page_repo(repodir):
     htmldir = path.abspath('_build/html')
-    
+
     #pull h
     if continue_check('Update git repo at {0}?'.format(repodir)):
         syscall = 'cd {0};git pull'.format(repodir)
         safe_syscall(syscall)
-    
+
     #copy file
     if continue_check('Copy contents of {0} to {1}?'.format(htmldir, repodir)):
         syscall = 'rsync -a --delete {0} {1}'.format(path.join(htmldir, '*'), repodir)
@@ -174,10 +187,14 @@ if __name__ == '__main__':
     ap.add_argument('--skip-rebuild-page', '-s', default=False,
         help='Skip the step of cleaning the current build of the page and '
         're-building it', dest='nobuild', action='store_true')
+    ap.add_argument('--force', '-f', default=False,
+        help='Do all the actions without prompting.  Basically the '
+        'equivalent of hitting enter at each prompt.',action='store_true')
 
     args = ap.parse_args()
 
     DRYRUN = args.dryrun
+    FORCE = args.force
 
     if args.longhelp:
         print _instructions_description
