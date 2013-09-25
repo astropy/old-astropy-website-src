@@ -20,7 +20,12 @@ There are several ways in which you can give us feedback:
   #astropy freenode.net IRC_ channel, which can be accessed for free without
   registration from any IRC client (e.g., http://webchat.freenode.net/).
 
+* We also welcome code posts as `issues`_ (or `pull requests`_) on github and
+  as posts to the `astropy-dev`_ google group.
 
 .. _IRC: http://en.wikipedia.org/wiki/Irc
 .. _feedback@astropy.org: mailto:feedback@astropy.org
 .. _astropy: http://mail.scipy.org/mailman/listinfo/astropy
+.. _issues: http://github.com/astropy/astropy/issues
+.. _pull requests: https://github.com/astropy/astropy/pulls
+.. _astropy-dev: https://groups.google.com/forum/#!forum/astropy-dev
