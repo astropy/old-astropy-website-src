@@ -12,7 +12,7 @@ There are several ways in which you can give us feedback:
   discussion with the developers and other users.
 
 * If you have feedback you would prefer to keep private,  you can e-mail
-  `feedback@astropy.org`_.  This address points to a private mailing list that
+  `astropy-feedback@googlegroups.com`_.  This address points to a private mailing list that
   includes the astropy core developers.  If you would like a reply (e.g., an
   acknowledgement of your comment), please request it.
 
