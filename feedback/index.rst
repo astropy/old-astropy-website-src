@@ -1,3 +1,5 @@
+:orphan:
+
 Astropy Feedback (and getting help)
 ===================================
 
