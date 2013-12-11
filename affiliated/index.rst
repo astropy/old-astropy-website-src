@@ -145,7 +145,7 @@ affiliated with the Astropy project, contact the Astropy coordination commitee
 by leaving a message on the `astropy-dev <http://groups.google.com/group/astropy-dev>`_ 
 group, or by contacting one of the coordination committee members directly.
 
-A candiate affilated package will be judged by the coordination committee on the following
+A candidate affilated package will be judged by the coordination committee on the following
 standards:
 
 * It should use `classes and functions from the astropy package <http://docs.astropy.org>`_
@@ -167,7 +167,7 @@ standards:
 
 
 If you are considering creating a new astronomy package and would like it to be
-an Astropy affiliated package, we provides a package template to make it much 
+an Astropy affiliated package, we provide a package template to make it much 
 easier to meet these standards.  It provides the necessary structure to 
 generate documentation like that used in the `astropy` package, a ready-to-use
 testing framework, and a variety of tools that streamline tasks like  user
