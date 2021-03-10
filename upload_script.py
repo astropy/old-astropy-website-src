@@ -24,7 +24,7 @@ To make this work correctly, a few things must be true:
   script, then, in $SOMETHING/astropy-website.
 * You must have push rights to the astropy.github.com repo. Normally this
   means the astropy/astropy.github.com repo, and by default it assumes you
-  are pushing to the "master" branch on the remote named "origin".  You can
+  are pushing to the "main" branch on the remote named "origin".  You can
   change this with options, but that's what git will do automatically if
   you clone directly from astropy/astropy.github.com.
 
@@ -182,7 +182,7 @@ if __name__ == '__main__':
         dest='repo')
     ap.add_argument('--remote', '-e', default='origin',
         help='The name of the remote to push the final page repo to')
-    ap.add_argument('--branch', '-b', default='master',
+    ap.add_argument('--branch', '-b', default='main',
         help='The name of the branch to use on the page repo')
     ap.add_argument('--skip-rebuild-page', '-s', default=False,
         help='Skip the step of cleaning the current build of the page and '
