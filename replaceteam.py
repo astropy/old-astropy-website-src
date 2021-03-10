@@ -47,7 +47,7 @@ def get_astropy_credits(warner):
     from urllib2 import urlopen
 
     creditspath = os.environ.get('ASTROPY_REPO_PATH',
-        'http://raw.github.com/astropy/astropy/master/docs/credits.rst')
+        'http://raw.github.com/astropy/astropy/main/docs/credits.rst')
 
     if creditspath.startswith('http'):
         #url - download page from web
