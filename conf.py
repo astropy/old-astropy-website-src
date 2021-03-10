@@ -36,8 +36,8 @@ source_suffix = '.rst'
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
 
-# The main toctree document.
-main_doc = 'index'
+# The master toctree document.
+master_doc = 'index'
 
 # General information about the project.
 project = u'Astropy'
